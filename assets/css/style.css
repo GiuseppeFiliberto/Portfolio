@@ -122,6 +122,10 @@ body{
         margin-right: 20px;
     }
 
+    .footer-text{
+        text-align: center;
+    }
+
 }
 @media (max-width: 2400px) {
     .main-menu{
