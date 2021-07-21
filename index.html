@@ -20,9 +20,12 @@
 <header>
     <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
         <div class="container-lg">
-            <div class="icon-menu rounded-circle shadow-lg text-center p-3 bg-light justify-content-center">
-                <a class="text-primary fs-4 animate__animated
-                animate__fadeInDown animate__delay-1s" href="#"><i class="fas fa-home"></i></a>
+            <div class="icon-menu">
+                 <a href="#home">
+                    <button class="btn btn-style px-3 animate__animated
+                    animate__fadeInDown animate__delay-1s">Home
+                    </button>
+                </a>
             </div>
             <div class="open-menu animate__animated animate__fadeInDown animate__delay-2s">
                 <i class="fas fa-bars"></i>
@@ -33,7 +36,7 @@
                     <li><a class="dropdown-item" href="#projects">Projects</a></li>
                     <li><a class="dropdown-item" href="#Contact">Contact</a></li>
                      <div class="close-menu">
-                        <i class="fas fa-times"></i>
+                        <i class="fas fa-times text-white"></i>
                     </div>
                     <span class="icons mt-5">
                         <a href="https://www.instagram.com/giuseppe.philiberto/" class="social-margin text-dark mx-2 me-4 fs-3"><i class="fab fa-instagram social-links "></i></a>
@@ -41,11 +44,6 @@
                         <a href="https://bit.ly/2UVyKJk" class="social-margin text-dark me-2 fs-3"><i class="fab fa-linkedin-in social-links "></i></a>
                   </span>
                 </ul>
-
-
-
-
-            <!-- </div> -->
         </div>
     </nav>
 </header>
@@ -125,7 +123,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 col-6-sm d-flex align-items-center">
+                <div class="col-lg-12 col-6-sm d-flex align-items-center justify-content-center">
                     <a href="./assets/CV.pdf" download="CV" class="col-6-sm btn btn-style me-5">Download CV </a>
                     <div class="text-center align-content-center justify-content-center bg-white shadow-sm card-corners">
                         <a href="https://www.instagram.com/giuseppe.philiberto/" class="social-margin text-dark mx-2 me-4 fs-3"><i class="fab fa-instagram social-links "></i></a>
@@ -233,7 +231,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="about-item shadow-lg p-4 rounded bg-white card-corners">
+                    <div class="about-item shadow-lg p-4 bg-white card-corners">
                         <div class="icon my-3 text-primary fs-2">
                             <i class="fas fa-music"></i>
                         </div>
@@ -242,7 +240,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="about-item shadow-lg p-4 rounded bg-white card-corners">
+                    <div class="about-item shadow-lg p-4 bg-white card-corners">
                         <div class="icon my-3 text-primary fs-2">
                             <i class="fas fa-camera"></i>
                         </div>
@@ -251,7 +249,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="about-item shadow-lg p-4 rounded bg-white card-corners">
+                    <div class="about-item shadow-lg p-4 bg-white card-corners">
                         <div class="icon my-3 text-primary fs-2">
                             <i class="fas fa-gamepad"></i>
                         </div>
@@ -352,14 +350,13 @@
                             <div class="col-lg-12 mb-4">
                                 <textarea name="message" rows="5" placeholder="Write here your message" required class="form-control form-control-lg fs-6 shadow-lg"></textarea>
                             </div>
-                                            <input type="hidden" name="_next" value="https://giuseppefiliberto.github.io/Portfolio/pages/thanks.html/">
                         </div>
                                             <input type="hidden" name="_captcha" value="false"> <!-- Questo disattiva il captcha di formsubmit -->
-                                            
+                                            <input type="hidden" name="_next" value="https://giuseppefiliberto.github.io/Portfolio/pages/thanks">
                         <div class="row">
                             <div class="col-lg-12 mb-4">
-                                <button type="submit" class="btn btn-style px-3">Send Message</button>
-                            </div>
+                                <button type="submit" href="./pages/thanks.html" class="btn btn-style px-3">Send Message</button> 
+                                </div>
                         </div>
                     </form>
                 </div>
