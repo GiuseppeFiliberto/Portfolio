@@ -10,9 +10,12 @@
 }
 body{
     background: #0A7FFF;
+    
 }
 
-
+form{
+    caret-color: #4adb60;
+}
 /* Scrollbar */
 ::-webkit-scrollbar{
     width: 7px;
@@ -24,7 +27,20 @@ body{
     border-radius: 0;
 }
 
+::-moz-selection {
+    color: #000;
+    background: #4adb60;
+  }
+  
+  ::selection {
+    color: #000;
+    background: #4adb60;
+  }
 
+
+.open-menu:hover{
+    color: #0A7FFF;
+}
 .home-bg{
     background: #0A7FFF;
 }
@@ -62,7 +78,9 @@ body{
     background: #4adb60;
 }
 
-
+.social-bar{
+    color: #000;
+}
 .social-links:hover{
     color: #4adb60;
 }
@@ -96,8 +114,8 @@ body{
     cursor: pointer;
 }
 
-.main-menu .close-menu, .icons i{
-    font-size: 2rem;
+.main-menu, .icons i{
+    font-size: 3rem;
     display: none;
     cursor: pointer;
 }
@@ -108,10 +126,56 @@ body{
     width: 65%;
 }
 
+
+@media (max-width: 320px){
+   
+    .fs-3{
+
+        font-size: 0.5rem;
+        
+    }
+
+    .open-menu{
+        font-size: 0.8rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+    }
+    
+    .main-menu, .icons i{
+        font-size: 1.2rem;
+        display: none;
+        cursor: pointer;
+    }
+    .main-menu li a{
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+   
+    .about-text .fs-3{
+        font-size: 1.2rem !important;
+    }
+    .contactme-form .fs-5{
+
+        font-size: 1.1rem !important;
+        
+    }
+    .contactme-form p{
+        font-size: 0.9rem !important;
+    }
+
+}
+
 @media (max-width: 414px){
 
     
-
+    
     .waves{
         display: none;
     }
@@ -127,7 +191,10 @@ body{
         text-align: center;
         margin-bottom: 1rem;
     }
-
+ 
+    [data-tilt]{
+        display:initial;
+    }
 }
 @media (max-width: 2400px) {
     .main-menu{

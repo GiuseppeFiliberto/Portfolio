@@ -13,6 +13,13 @@ function show() {
 }
 
 function close() {
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = '-130%';
+    closeMenu.style.top = '-130%';
+
     
 }
+
+// const toggleClose = document.getElementById('toggle');
+// toggle.onclick = function(){
+//     toggle.classlist.toggle('active');
+// }
