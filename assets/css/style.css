@@ -170,6 +170,7 @@ form{
         font-size: 0.9rem !important;
     }
 
+
 }
 
 @media (max-width: 414px){
@@ -191,9 +192,24 @@ form{
         text-align: center;
         margin-bottom: 1rem;
     }
- 
+    
     [data-tilt]{
         display:initial;
+    }
+    .main-menu, .icons i{
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+    }
+    .main-menu li a{
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 2.5rem;
     }
 }
 @media (max-width: 2400px) {
@@ -208,7 +224,7 @@ form{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background:  #0c43f7b9;
+        background:  #0c43f7e3;
         transition: top 1s ease;
         display: none;
     }

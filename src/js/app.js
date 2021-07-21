@@ -13,8 +13,8 @@ function show() {
 }
 
 function close() {
-    mainMenu.style.top = '-130%';
-    closeMenu.style.top = '-130%';
+    mainMenu.style.top = '-100%';
+    closeMenu.style.top = '-100%';
 
     
 }
