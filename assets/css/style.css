@@ -5,11 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    
+
 }
 
 body{
-    background: #0A7FFF; 
+    background: #0A7FFF;
 }
 
 form{
@@ -35,7 +35,7 @@ a{
     color: #000;
     background: #4adb60;
   }
-  
+
   ::selection {
     color: #000;
     background: #4adb60;
@@ -46,26 +46,32 @@ a{
     color: #0A7FFF;
 }
 
-.ldn-contact:hover{
-    color: #4adb60 !important;
+.main-menu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.main-menu li{
+    list-style-type: none;
+
 }
 
-.home-bg{
-    background: #0A7FFF;
+.open-menu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
 }
 
-.skills{
-    background-color: #0A7FFF;
-}
-
-
-.card-corners{
-    border-radius: 30px;
-}
-
-.bg-2{
-    width: 100%;
-    overflow: hidden;
+.main-menu, .icons i{
+    font-size: 3rem;
+    display: none;
+    cursor: pointer;
 }
 
 .btn-style{
@@ -73,12 +79,34 @@ a{
     border-radius: 20px;
     color: #fff;
     font-weight: 600;
-    
+
 }
+
 .btn-style:hover{
     background: #4adb60;
     color: #fff;
 }
+
+
+.home-bg{
+    background: #0A7FFF;
+}
+
+.bg-2{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.skills{
+    background-color: #0A7FFF;
+}
+
+.card-corners{
+    border-radius: 30px;
+}
+
+
 
 .icon-start{
     width: 10%;
@@ -99,49 +127,21 @@ a{
 }
 
 
-.main-menu li a{
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    font-weight: 900;
-    font-size: 3rem;
-}
-.main-menu li{
-    list-style-type: none;
-
-}
-
-
-
-.open-menu{
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-}
-
-.main-menu, .icons i{
-    font-size: 3rem;
-    display: none;
-    cursor: pointer;
-}
-
-
-
 .pic-about{
     width: 75%;
 }
 
+.ldn-contact:hover{
+    color: #4adb60 !important;
+}
+/* iPhone 4 e iphone 5s/SE */
 
 @media (max-width: 320px){
-   
+
     .fs-3{
 
         font-size: 0.5rem;
-        
+
     }
 
     .open-menu{
@@ -150,30 +150,29 @@ a{
         display: none;
         cursor: pointer;
     }
-    
+
     .main-menu, .icons i{
         font-size: 1.2rem;
         display: none;
         cursor: pointer;
     }
     .main-menu li a{
-        display: inline-block;
-        padding: 15px;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        display: inline-block !important;
+        padding: 15px !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
         color: #fff;
-        font-weight: 900;
-        font-size: 2rem;
+        font-weight: 600 !important;
+        font-size: 1.5rem !important;
     }
-   
     .about-text .fs-3{
         font-size: 1.2rem !important;
     }
     .contactme-form .fs-5{
 
         font-size: 1.1rem !important;
-        
+
     }
     .contactme-form p{
         font-size: 0.9rem !important;
@@ -182,10 +181,12 @@ a{
 
 }
 
+
+/* iPhone X e iPhone Max/ XR */
+
 @media (max-width: 414px){
 
-    
-    
+
     .waves{
         display: none;
     }
@@ -201,7 +202,7 @@ a{
         text-align: center;
         margin-bottom: 1rem;
     }
-    
+
     [data-tilt]{
         display:initial;
     }
@@ -221,6 +222,37 @@ a{
         font-size: 2.5rem;
     }
 }
+
+/* iPad mini e iPad  */
+
+@media (min-width: 415px) and (max-width: 991px){
+
+    .footer-text{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* iPad Pro  */
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+    .ipadpro-margin-r{
+        margin-right: 1rem !important;
+
+    }
+    .ipadpro-margin-l{
+        margin-left: 1rem !important;
+    }
+
+    .ipadpro-margin-c{
+        margin-right: 0rem !important;
+    }
+}
+
+/* Menu ovunque  */
+
 @media (max-width: 2400px) {
     .main-menu{
         height: 100vh;
@@ -260,7 +292,7 @@ a{
     }
 }
 
-
+/* Thank-you page css */
 .thanks-title{
     margin-top: 2rem;
     text-transform: uppercase;
